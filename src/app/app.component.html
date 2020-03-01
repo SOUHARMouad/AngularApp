@@ -1,0 +1,92 @@
+<!--<div>
+<p>{{a}}</p>
+<p>{{b}}</p>
+<p>{{c}}</p>
+<img [src] = "monimage">
+<button (click) = "supprimerimage()"> </button>
+<input type= "text" [(ngModel)] ="monnom">
+<ul>
+<li>Leanne Graham</li>
+<li>Ervin Howell</li>
+<li>Clementine Bauch</li>
+<li>Patricia Lebsack</li>
+<li>Chelsey Dietrich</li>
+<li>Mrs. Dennis Schulist</li>
+<li>Kurtis Weissnat</li>
+<li>Nicholas Runolfsdottir V</li>
+<li>Glenna Reichert</li>
+<li>Clementina DuBuque</li>
+</ul>
+<h1>Bonjour cher ami {{monnom}}</h1>
+<p *ngFor="let a of tab " (click)="delete(a)"> {{a}} </p>
+<ul>
+    <li *ngFor="let a of liste" (click)="view(a)"> {{a}} </li>
+    <div *ngIf="b" style= "background-color: brown"> 
+    </ul>
+    <div class='panel panel-primary'>  
+    <div class='panel-heading'>  
+        {{title}}  
+    </div>   
+    <div class='panel-body'>  
+        <div class='table-responsive'>  
+            <table class='table'>  
+                <thead>  
+                    <tr>  
+                        <th>id</th>  
+                        <th>name</th>  
+                        <th>username</th>  
+                        <th>email</th>  
+                        <th>adress</th>  
+                        <th>street</th>  
+                        <th>suite</th>  
+                        <th>city</th> 
+                        <th>zipcode</th>  
+                        <th>geo</th>  
+                        <th>lat</th>  
+                        <th>Ing</th>  
+                        <th>phone</th>  
+                        <th>website</th>  
+                        <th>company</th>  
+                        <th>catchPhase</th>  
+                        <th>bs</th> 
+                    </tr>  
+                </thead>  
+                <tbody>  
+                    <tr *ngFor="let name of name">
+                        <td>{{name.id}}</td>  
+                        <td>{{name.name}}</td>  
+                        <td>{{name.username}}</td>  
+                        <td>{{name.email}}</td>  
+                        <td>{{name.adress}}</td>  
+                        <td>{{name.street}}</td>  
+                        <td>{{name.suite}}</td>  
+                        <td>{{name.city}}</td> 
+                        <td>{{name.zipcode}}</td>  
+                        <td>{{name.geo}}</td>  
+                        <td>{{name.lat}}</td>  
+                        <td>{{name.Ing}}</td> 
+                        <td>{{name.phone}}</td>  
+                        <td>{{name.website}}</td>  
+                        <td>{{name.company}}</td>  
+                        <td>{{name.catchPhase}}</td>
+                        <td>{{name.bs}}</td>  
+                    </tr>
+                </tbody>  
+            </table>
+        </div>  
+    </div>
+</div>-->
+<div>
+<li *ngFor = "let p of liste" (click)="afficher (p)"> {{p.name}} </li>
+<div *ngIf = "name" style= "background-color: brown">
+<p>Nom:{{name}}</p>
+<p>Nom d'utilisateur:{{username}}</p>
+<p>Phone:{{phone}}</p>
+<p>Website:{{website}}</p>
+</div>
+</div>
+<!--<button Routerlink="Utilisateurs">Utilisateurs</button>
+<button Routerlink="Photos" >Photos</button>
+<button Routerlink="Articles" >Articles</button>
+<router-outlet>
+ </router-outlet>-->
