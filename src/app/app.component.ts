@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SrvService} from './srv.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,6 +13,10 @@ export class AppComponent {
   phone : string = "";
   address : string = "";
   street : string = "";
+  constructor (private srvService : SrvService) {}
+  ngOnInit (){
+    this.name = this.name
+  }
   liste : any[]= [
     { 
       id: 1,
@@ -244,6 +249,7 @@ export class AppComponent {
       }
     }
   ]
+  title: any;
   afficher(person)
   {
     this.name = person.name

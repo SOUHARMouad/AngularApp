@@ -30,7 +30,7 @@ const appRoutes : Routes=[
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SrvService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
